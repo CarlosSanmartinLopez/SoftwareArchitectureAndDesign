@@ -9,6 +9,18 @@ package State;
  *
  * @author Stelliox.com
  */
-public class Test {
-    
+public class Test 
+{
+    public static void main(String[] args) 
+    {
+        Context context = new Context();
+        
+        OnState onState = new OnState();
+            onState.doAction(context);
+            System.out.println(context.getState());
+            
+        OffState offState = new OffState();
+            offState.doAction(context);
+            System.out.println(context.getState());
+    }
 }
