@@ -28,21 +28,21 @@ public class AutoElectricFeacture extends AutomobileDecorator
     public void off() 
     {
         System.out.println("Off (Electronic)");
-        getAuto().on();
+        getAuto().off();
     }
 
     @Override
     public void accel() 
     {
         System.out.println("Acceleration (Electronic)");
-        getAuto().on();
+        getAuto().accel();
     }
 
     @Override
     public void stop() 
     {
         System.out.println("Stop (Electronic)");
-        getAuto().on();
+        getAuto().stop();
     }
     
 }
